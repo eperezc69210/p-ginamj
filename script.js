@@ -95,3 +95,13 @@ if (botonOferta) {
     alert("🎉 " + ofertas[indice]);
   });
 }
+
+function mostrarVestidos() {
+  const contenedor = document.getElementById("masVestidos");
+  if (contenedor.style.display === "none") {
+    contenedor.style.display = "flex"; // cambia a "flex" para usar el layout de Bootstrap
+    contenedor.classList.add("flex-wrap", "justify-content-center");
+  } else {
+    contenedor.style.display = "none"; // permite ocultarlo si se presiona otra vez
+  }
+}

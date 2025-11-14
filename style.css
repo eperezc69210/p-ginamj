@@ -377,3 +377,46 @@ input {
 }
 
 }
+.cuadro-popular {
+  width: 100%; /* Ocupa todo el ancho de su columna */
+  height: 250px; /* Altura fija para todos */
+  overflow: hidden; /* Oculta partes que sobresalgan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuadro-popular img {
+  height: 100%; /* La imagen ocupa toda la altura */
+  width: auto; /* Mantiene proporción */
+  object-fit: cover; /* Recorta la imagen si es necesario */
+}
+
+.cuadro-popular {
+  width: 200px;   /* ancho fijo de cada cuadro */
+  height: 250px;  /* altura fija */
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #000; /* opcional, para resaltar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuadro-popular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantiene proporción y recorta si es necesario */
+}
+
+#nosotros h3 {
+  color: #ffc107; /* Color dorado similar al botón */
+  margin-bottom: 15px;
+}
+
+#nosotros p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
