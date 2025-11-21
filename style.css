@@ -419,4 +419,60 @@ input {
   line-height: 1.5;
 }
 
+.card-precio {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-precio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.popup-oferta {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background-color: #ffc107; /* color de fondo */
+  color: #000;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 9999;
+}
+
+/* Popup de oferta */
+.popup-oferta {
+  position: fixed;
+  top: -100px; /* empieza fuera de pantalla */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffc107; /* amarillo */
+  color: #000;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 9999;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-1 img {
+  width: 100%;        /* Ocupa todo el ancho del contenedor */
+  height: 250px;      /* Fija la altura (puedes ajustar a tu gusto) */
+  object-fit: cover;  /* Recorta la imagen si es necesario, mantiene proporción */
+  border-radius: 10px; /* Opcional, redondea esquinas */
+}
 
