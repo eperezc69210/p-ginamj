@@ -124,3 +124,4 @@ fetch("productos.json")
     });
   })
   .catch(error => console.error("Error cargando precios:", error));
+
